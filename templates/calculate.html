@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate</title>
+</head>
+<body>
+<form action="result", method="post">
+    <label for="a1">birinchi son</label>
+    <input type="text" id="a1"  name="a1" required><br><br>
+    <label for="a2">ikkinchi son</label>
+    <input type="text" id="a2" name="a2" required><br><br>
+    <button type="submit" name="action" value="add">+</button>
+    <button type="submit" name="action" value="sub">-</button>
+    <button type="submit" name="action" value="mul">*</button>
+    <button type="submit" name="action" value="div">/</button>
+    <button type="submit" name="action" value="mod">%</button>
+    <button type="submit" name="action" value="sbs">**</button>
+</form>
+    {% if result %}
+    <h3>Natija:</h3>
+    <p>Hisob: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
